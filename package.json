@@ -1,0 +1,11 @@
+{
+  "name": "tp-3-entenza",
+  "version": "1.0.0",
+  "description": "tp 3 de node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Leila Entenza",
+  "license": "ISC"
+}
