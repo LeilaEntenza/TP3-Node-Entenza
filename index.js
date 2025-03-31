@@ -1,7 +1,7 @@
 //1
 console.log("¡Hola! Soy Lei y este es mi primer proyecto de node :)");
 //2
-let valoresArray = [1, 2];
+let valoresArray = [1, 2, 1];
 const mostrarValores = (valoresArray) => {
     console.log(valoresArray);
 }
@@ -43,10 +43,9 @@ console.log(arrayNum.filter((num) => num > numMayor));
 //9
 
 var contador = 0;
-const elementoEspecifico = 1;
-for(const elemento in valoresArray){
-    if(elemento == elementoEspecifico){
-        contador++;
-    }
-}
-console.log(contador);
+const elementoEspecifico = "1";
+var repeticiones=(valoresArray.reduce((veces, elemento) => {
+    veces[elemento] = (veces[elemento] || 0) +1;
+    return veces
+}, {}));
+console.log(repeticiones[elementoEspecifico]);
